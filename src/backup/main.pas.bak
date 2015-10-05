@@ -684,6 +684,7 @@ procedure TMainForm.EditRawDo(aHouse: tKaM_House);
 var
   iHouses: tKaM_House_Array;
   i: Integer;
+  iFrac: tFrac;
 begin
   iHouses := aGetHouses(tFromRaw, aHouse);
   for i := 0 to Length(iHouses)-1 do begin
