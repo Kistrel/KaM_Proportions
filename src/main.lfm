@@ -32,8 +32,8 @@ object MainForm: TMainForm
         Height = 1045
         Top = 0
         Width = 880
-        ActivePage = TabCounters
-        TabIndex = 3
+        ActivePage = TabChains
+        TabIndex = 0
         TabOrder = 0
         object TabChains: TTabSheet
           Caption = 'Production chains'
