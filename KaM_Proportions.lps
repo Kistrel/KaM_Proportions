@@ -3,13 +3,13 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="9"/>
-    <BuildModes Active="Default"/>
+    <BuildModes Active="Release"/>
     <Units Count="2">
       <Unit0>
         <Filename Value="KaM_Proportions.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="KaM_Proportions"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
       </Unit0>
       <Unit1>
         <Filename Value="src\main.pas"/>
@@ -21,9 +21,9 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="46"/>
-        <CursorPos X="56" Y="66"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="463"/>
+        <CursorPos X="11" Y="493"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -31,7 +31,104 @@
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="0" HistoryIndex="-1"/>
+    <JumpHistory Count="24" HistoryIndex="23">
+      <Position1>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="55" Column="53" TopLine="46"/>
+      </Position1>
+      <Position2>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="2978" Column="44" TopLine="2950"/>
+      </Position2>
+      <Position3>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="2963" Column="35" TopLine="2950"/>
+      </Position3>
+      <Position4>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="28" Column="108" TopLine="22"/>
+      </Position4>
+      <Position5>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="2971" Column="42" TopLine="167"/>
+      </Position5>
+      <Position6>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="49" Column="25" TopLine="31"/>
+      </Position6>
+      <Position7>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="212" Column="29" TopLine="196"/>
+      </Position7>
+      <Position8>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="2987" Column="44" TopLine="2956"/>
+      </Position8>
+      <Position9>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="379" Column="61" TopLine="374"/>
+      </Position9>
+      <Position10>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="223" Column="27" TopLine="196"/>
+      </Position10>
+      <Position11>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="215" Column="45" TopLine="196"/>
+      </Position11>
+      <Position12>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="222" Column="44" TopLine="196"/>
+      </Position12>
+      <Position13>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="280" Column="65" TopLine="249"/>
+      </Position13>
+      <Position14>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="301" Column="53" TopLine="270"/>
+      </Position14>
+      <Position15>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="2995" Column="5" TopLine="2963"/>
+      </Position15>
+      <Position16>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="221" Column="44" TopLine="196"/>
+      </Position16>
+      <Position17>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="222" Column="44" TopLine="197"/>
+      </Position17>
+      <Position18>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="278" Column="3" TopLine="276"/>
+      </Position18>
+      <Position19>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="276" Column="1" TopLine="261"/>
+      </Position19>
+      <Position20>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="68" Column="70" TopLine="35"/>
+      </Position20>
+      <Position21>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="226" Column="15" TopLine="202"/>
+      </Position21>
+      <Position22>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="4" Column="17" TopLine="1"/>
+      </Position22>
+      <Position23>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="493" Column="11" TopLine="462"/>
+      </Position23>
+      <Position24>
+        <Filename Value="src\main.pas"/>
+        <Caret Line="494" Column="17" TopLine="463"/>
+      </Position24>
+    </JumpHistory>
   </ProjectSession>
   <EditorMacros Count="0"/>
 </CONFIG>

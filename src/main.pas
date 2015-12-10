@@ -25,15 +25,15 @@ type
     CheckBox1, CheckBox2, CheckBox3, CheckBox4, CheckBox5, CheckBox6, CheckBox7, CheckBox8, CheckBox9, CheckBox10, CheckBox11, CheckBox12, CheckBox13, CheckBox14, CheckBox15: TCheckBox;
     ComboBox1, ComboBox2, ComboBox3, ComboBox4, ComboBox5, ComboBox6, ComboBox7, ComboBox8: TComboBox;
     Edit1, Edit10, Edit11, Edit12, Edit13, Edit14, Edit15, Edit16, Edit17, Edit18, Edit19, Edit2, Edit20, Edit21, Edit22, Edit23, Edit24, Edit25, Edit26, Edit27, Edit28, Edit29, Edit3, Edit30, Edit31, Edit32, Edit33, Edit34, Edit4, Edit5, Edit6, Edit7, Edit8, Edit9, Edit35, Edit36, Edit37, Edit38: TEdit;
-    ImageCounters, ImageHitChance, ImageFight, ImageBack, ImageIWeapons, ImageWeapSmithy, ImageIArmor, ImageArmorSmithy, ImageIronSmithy, ImageIronMine, ImageCoalMine, ImageUnit, ImageSchool, ImageMetallurgist, ImageGoldMine, ImageCoalG, ImageIronM, ImageGoldM, ImageStoneM, ImageStone, ImageQuarry, ImageWWeapons, ImageWeapWorkshop, ImageFish, ImageWater, ImageFisherman, ImageGreenland, ImageWood, ImageSawmill, ImageWine, ImageField, ImageWineField, ImageVineyard, ImageHorse, ImageStable, ImageWShield, ImageLArmor, ImageArmorWorkshop, ImageTannery, ImageSausage, ImageButcher, ImageSwine, ImageLoaf, ImageBakery, ImageMill, ImageFarm, ImageUnit1, ImageUnit2, ImageUnit3, ImageUnit4: TImage;
-    Label1, Label2, Label3, Label4, Label5, Label6, Label7, Label8, Label9, Label10, Label11, Label12, Label13, Label14, Label15, Label16, Label17, Label18, Label19, Label20, Label21, Label22, Label23, Label24, Label25, Label26, Label27, Label28, Label29, Label30, Label31, Label32, Label33, Label34, Label35, Label36: TLabel;
+    ImageHouses, ImageCounters, ImageHitChance, ImageFight: TImage;
+    Label1, Label2, Label3, Label4, Label14, Label15, Label16, Label17, Label18, Label19, Label20, Label21, Label22, Label23, Label24, Label25, Label26, Label27, Label28, Label29, Label30, Label31, Label32: TLabel;
     LabeledEdit1, LabeledEdit2, LabeledEdit3, LabeledEdit4, LabeledEdit5, LabeledEdit6, LabeledEdit7, LabeledEdit8, LabeledEdit9, LabeledEdit10, LabeledEdit11, LabeledEdit12, LabeledEdit13, LabeledEdit14, LabeledEdit15, LabeledEdit16: TLabeledEdit;
     MainPanel: TPanel;
     Memo1: TMemo;
     PageControl: TPageControl;
     MainScrollBox: TScrollBox;
-    Shape1, Shape2, Shape3, Shape4, Shape5, Shape6, Shape7, Shape8, Shape9, Shape10, Shape11, Shape12, Shape13, Shape14, Shape15, Shape16, Shape17, Shape18: TShape;
-    StaticText1, StaticText10, StaticText11, StaticText12, FishFeed, WineFeed, LoafFeed, SausageFeed, StaticText2, StaticText3, StaticText4, StaticText5, StaticText6, StaticText7, StaticText8, StaticText9: TStaticText;
+    Shape2, Shape3, Shape4, Shape5: TShape;
+    FishFeed, WineFeed, LoafFeed, SausageFeed: TStaticText;
     StringGridStats, StringGridRecruited: TStringGrid;
     TabChains, TabUnits, TabFight, TabCounters: TTabSheet;
     MainTimer: TTimer;
@@ -204,10 +204,31 @@ end;
 procedure TMainForm.FormCreate(Sender: TObject);
 var
   i: tKaM_House;
+  aImage: TPortableNetworkGraphic;
 begin
   for i := Low(tKaM_House) to High(tKaM_House) do aHouseValue[i].aDen := 1;
 
   LabeledEdit15EditingDone(LabeledEdit15);
+
+  aImage := TPortableNetworkGraphic.Create;
+  try
+    aImage.LoadFromFile('KaM_PICS/Houses.png');
+    ImageHouses.Width := aImage.Width;
+    ImageHouses.Height := aImage.Height;
+    ImageHouses.Picture.Assign(aImage);
+
+    aImage.LoadFromFile('KaM_PICS/HitChance.png');
+    ImageHitChance.Width := aImage.Width;
+    ImageHitChance.Height := aImage.Height;
+    ImageHitChance.Picture.Assign(aImage);
+
+    aImage.LoadFromFile('KaM_PICS/Fight.png');
+    ImageFight.Width := aImage.Width;
+    ImageFight.Height := aImage.Height;
+    ImageFight.Canvas.Draw(0, 0, aImage);
+  finally
+    aImage.Free;
+  end;
 end;
 
 
@@ -2975,7 +2996,7 @@ begin
 
   aImage := TPortableNetworkGraphic.Create;
   try
-    aImage.LoadFromFile('KaM_PICS/Units ring/Units.png');
+    aImage.LoadFromFile('KaM_PICS/Units.png');
     ImageCounters.Canvas.Draw(0, 0, aImage);
   finally
     aImage.Free;
